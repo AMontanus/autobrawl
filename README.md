@@ -8,45 +8,46 @@
 ## Concept headlines
 * 6 players per match - PvE and PvP rounds.
 * 6 board slots per player.
-* Each player selects 1 of 3 champions.
+* Each player selects 1 of 3 `Champions`.
 * Start on level 1, use mana to upgrade levels up to level 6.
 * Start with 3 mana, gain 1 max mana per round up to a maximum of 10.
-* 9+ "themes" - 6 available per match.
+* 9+ "`Themes`" - 6 available per match.
 * 18 units per "theme" - 3 per level.
 * Units cost 3 mana.
 * Units are budgeted and weighted with stats and effects (Keywords).
 
 ## Keywords
-There should probably be a distinction between Primary and Secondary Keywords. I.e. Curtain call, Inspire and Invoke are examples of Primary ones, while Camouflage and Fervor are examples of secondary ones.
+There should probably be a distinction between primary and secondary Keywords. I.e. Curtain call, Inspire and Invoke are examples of Primary ones, while Camouflage and Fervor are examples of secondary ones. Themes should primarily have 1-2 primary Keywords and any number of secondary Keywords. 
 
-* Camouflage (cannot be directly attacked before attacking).
-* Cleave (attack target and unit adjacent to target).
-* Curtain call (occurs when unit dies during brawl phase).
-* Neutralize (eliminates target's effects before attack lands).
-* Distract (takes priority when enemy units attack).
-* Fervor (attack twice in a row).
-* Inspire (occurs at the start of each brawl phase).
-* Invoke (occurs when unit enters board during draft phase).
-* Last stand (survive with one health when unit first takes fatal damage).
-* Lethal (ignore target's health).
-* Overkill (occurs when damage exceeds target's health).
-* Rebuff (ignore the first instance of damage).
-* Survivor (occurs if unit is alive at the end of brawl phase).
-* End of  turn (occurs at the end of each draft phase).
-* Start of turn (occurs at the start of each draft phase).
+* `Camouflage` (cannot be directly attacked before attacking).
+* `Cleave` (attack target and unit adjacent to target).
+* `Curtain call` (occurs when unit dies during brawl phase).
+* `Neutralize` (eliminates target's effects before attack lands).
+* `Distract` (takes priority when enemy units attack).
+* `Fervor` (attack twice in a row).
+* `Inspire` (occurs at the start of each brawl phase).
+* `Invoke` (occurs when unit enters board during draft phase).
+* `Last stand` (survive with one health when unit first takes fatal damage).
+* `Lethal` (ignore target's health).
+* `Overkill` (occurs when damage exceeds target's health).
+* `Rebuff` (ignore the first instance of damage).
+* `Survivor` (occurs if unit is alive at the end of brawl phase).
+* `End of  turn` (occurs at the end of each draft phase).
+* `Start of turn` (occurs at the start of each draft phase).
 
 ## Themes
-Some themes should work primarily with intra-theme synergy, while others should work well in inter-theme lineups. Should probably not be strict counter themes are strict complementary themes, but nuanced synergies/anti synergies.
+Some Themes should work primarily with intra-Theme synergy, while others should work well in inter-Theme lineups. Should probably not be strict counter Themes and strict complementary Themes, but nuanced synergies/anti synergies.
+One Theme should primarily be a support Theme which primarily enables other Themes and has Units that work across all Themes.
 
-1. {TBD} - Priority keywords: Inspire, Invoke, Lethal
-2. {TBD} - Priority keywords: Curtain call, Distract, Last stand
-3. {TBD} - Priority keywords: Distract, Overkill, Rebuff
-4. {TBD} - Priority keywords: Inspire, Distract, Survivor
-5. {TBD} - Priority keywords: Distract, Last stand, Rebuff
-6. {TBD} - Priority keywords: Fervor, Invoke, Survivor
-7. {TBD} - Priority keywords: Cleave, Overkill, Rebuff
-8. {TBD} - Priority keywords: Camouflage, Curtain call, Inspire
-9. {TBD} - Priority keywords: Last stand, Lethal, Survivor
+1. {TBD} - Primary Keywords: `Inspire`, `Invoke` (`Lethal`)
+2. {TBD} - Primary Keywords: `Curtain call`, `Rebuff`
+3. {TBD} - Primary Keywords: `Survivor`, (`Distract`)
+4. {TBD} - Primary Keywords: `Inspire` (`Distract`, `Survivor`)
+5. {TBD} - Primary Keywords: `Last stand`, `Rebuff`
+6. {TBD} - Primary Keywords: `Invoke`, `Survivor` (`Fervor`)
+7. {TBD} - Primary Keywords: `Rebuff` (`Cleave`, `Overkill`)
+8. {TBD} - Primary Keywords: `Curtain call`, `Inspire` (`Camouflage`)
+9. {TBD} - Primary Keywords: `Last stand`, (`Lethal`, `Survivor`)
 
 
 ## Champions
@@ -58,3 +59,7 @@ Guiding principles:
 * There should be champions focused on early game dominance.
 * There should be champions focused on Mana manipulation.
 * There should be a few champions that fundamentally alters gameplay. (Lower Unit cost, additional Board slot?)
+
+## Drafting
+Drafts are phases between each battle, and gives players a selection of Units to draft. The draft board starts with 3 Units on level 1, and adds 1 Unit every even-numbered level (2,4,6). You can refresh the draft board for 1 Mana, or obtain a Unit for 3 mana. Obtaining a Unit adds it to the hand, and it can then be played onto the board.
+
