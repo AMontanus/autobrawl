@@ -11,13 +11,13 @@
 * Each player selects 1 of 3 `Champions`.
 * Start on level 1, use mana to upgrade levels up to level 6.
 * Start with 3 mana, gain 1 max mana per round up to a maximum of 10.
-* 9+ "`Themes`" - 6 available per match.
-* 18 units per "theme" - 3 per level.
+* 9+ "`Aspects`" - 6 available per match.
+* 18 units per "Aspect" - 3 per level.
 * Units cost 3 mana.
 * Units are budgeted and weighted with stats and effects (Keywords).
 
 ## Keywords
-There should probably be a distinction between primary and secondary Keywords. I.e. Curtain call, Inspire and Invoke are examples of Primary ones, while Camouflage and Fervor are examples of secondary ones. Themes should primarily have 1-2 primary Keywords and any number of secondary Keywords. 
+There should probably be a distinction between primary and secondary Keywords. I.e. Curtain call, Inspire and Invoke are examples of Primary ones, while Camouflage and Fervor are examples of secondary ones. Aspects should primarily have 1-2 primary Keywords and any number of secondary Keywords. 
 
 * `Camouflage` (cannot be directly attacked before attacking).
 * `Cleave` (attack target and unit adjacent to target).
@@ -35,9 +35,9 @@ There should probably be a distinction between primary and secondary Keywords. I
 * `End of  turn` (occurs at the end of each draft phase).
 * `Start of turn` (occurs at the start of each draft phase).
 
-## Themes
-Some Themes should work primarily with intra-Theme synergy, while others should work well in inter-Theme lineups. Should probably not be strict counter Themes and strict complementary Themes, but nuanced synergies/anti synergies.
-One Theme should primarily be a support Theme which primarily enables other Themes and has Units that work across all Themes.
+## Aspects
+Some Aspects should work primarily with intra-Aspect synergy, while others should work well in inter-Aspect lineups. Should probably not be strict counter Aspects and strict complementary Aspects, but nuanced synergies/anti synergies.
+One Aspect should primarily be a support Aspect which primarily enables other Aspects and has Units that work across all Aspects.
 
 1. {TBD} - Primary Keywords: `Inspire`, `Invoke` (`Lethal`)
 2. {TBD} - Primary Keywords: `Curtain call`, `Rebuff`
@@ -54,7 +54,7 @@ One Theme should primarily be a support Theme which primarily enables other Them
 Champions should have one or two signature abilities which provides a unique twist to how you want to execute your match. 
 Guiding principles: 
 
-* There should be 1 champion for each Theme that strictly prefers that Theme, and is only available when that Theme is in the match. Landing a "Themed" lineup properly with a "Themed" champion should lead to excellent odds of winning.
+* There should be 1 champion for each Aspect that strictly prefers that Aspect, and is only available when that Aspect is in the match. Landing a "Aspectd" lineup properly with a "Aspectd" champion should lead to excellent odds of winning.
 * There should be 1 champion for each "Primary Keyword" that heavily favours that Keyword. Landing a "Keyworded" lineup properly with a "Keyworded" champion should lead to excellent odds of winning.
 * There should be champions focused on early game dominance.
 * There should be champions focused on Mana manipulation.
