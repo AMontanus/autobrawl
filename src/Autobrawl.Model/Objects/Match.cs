@@ -1,4 +1,6 @@
-﻿namespace Autobrawl.Model;
+﻿using Autobrawl.Model.Enums;
+
+namespace Autobrawl.Model;
 public class Match
 {
     public Match()
@@ -11,11 +13,17 @@ public class Match
         AvailableAspects = new HashSet<Aspect>();
     }
 
+    [Required]
+    [Key]
     public Guid ID { get; set; }
 
-    public DateTime StartDateTime { get; set; }
-    public DateTime EndDateTime { get; set; }
-    public bool IsActive { get; set; }
+    public DateTime StartDateTime { get; private set; }
+
+    public DateTime EndDateTime { get; private set; }
+
+    public bool IsActive { get; private set; }
+
+    public Phase CurrentPhase {  get; private set; }
 
     public ICollection<Player> Players { get; set; }
     public ICollection<Player> RemainingPlayers { get; set; }
