@@ -1,14 +1,12 @@
-﻿namespace Autobrawl.Model
+﻿namespace Autobrawl.Model;
+public class Hand
 {
-    public class Hand
+    public Hand()
     {
-        public Hand()
-        {
-            Cards = new HashSet<Card>();
-        }
-
-        [Required]
-        public int CardCount { get; set; }
-        public ICollection<Card> Cards { get; set; }
+        Cards = new HashSet<Card>();
     }
+
+    [Required]
+    public int CardCount { get; set; }
+    public ICollection<Card> Cards { get; set; }
 }

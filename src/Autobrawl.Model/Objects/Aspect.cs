@@ -1,10 +1,12 @@
-﻿namespace Autobrawl.Model
+﻿namespace Autobrawl.Model;
+public class Aspect
 {
-    public class Aspect
-    {
-        public int ID { get; set; }
-        public string Name { get; set; }
+    [Required]
+    [Key]
+    public int ID { get; set; }
 
-        public ICollection<Card> Cards { get; set; }
-    }
+    [Required]
+    public string Name { get; set; }
+
+    public ICollection<Card> Cards { get; set; }
 }

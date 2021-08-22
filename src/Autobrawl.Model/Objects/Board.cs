@@ -1,6 +1,4 @@
-﻿namespace Autobrawl.Model
+﻿namespace Autobrawl.Model;
+public class Board
 {
-    public class Board
-    {
-    }
 }
