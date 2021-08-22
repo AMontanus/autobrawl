@@ -54,7 +54,7 @@ One Aspect should primarily be a support Aspect which primarily enables other As
 Champions should have one or two signature abilities which provides a unique twist to how you want to execute your match. 
 Guiding principles: 
 
-* There should be 1 champion for each Aspect that strictly prefers that Aspect, and is only available when that Aspect is in the match. Landing a "Aspectd" lineup properly with a "Aspectd" champion should lead to excellent odds of winning.
+* There should be 1 champion for each Aspect that strictly prefers that Aspect, and is only available when that Aspect is in the match. Landing a "Aspected" lineup properly with a "Aspectd" champion should lead to excellent odds of winning.
 * There should be 1 champion for each "Primary Keyword" that heavily favours that Keyword. Landing a "Keyworded" lineup properly with a "Keyworded" champion should lead to excellent odds of winning.
 * There should be champions focused on early game dominance.
 * There should be champions focused on Mana manipulation.
