@@ -1,15 +1,14 @@
-﻿using System;
-using Autobrawl.Model;
+﻿using Autobrawl.Model;
 
-namespace Autobrawl.CLI
+namespace Autobrawl.CLI;
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            var match = new Match();
+        var match = new Match();
 
-            Console.WriteLine("Hello World!");
-        }
+        match.EndMatch();
+
+        Console.WriteLine("Hello World!");
     }
 }

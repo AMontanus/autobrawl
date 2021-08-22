@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Autobrawl.Engine.Mechanics
+﻿namespace Autobrawl.Engine.Mechanics;
+public class RoundManager
 {
-    class RoundManager
-    {
-    }
 }
