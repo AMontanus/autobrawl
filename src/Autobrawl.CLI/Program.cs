@@ -6,11 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var match = new Match();
-        var phaseManager = new PhaseManager();
-
-
-        match.EndMatch();
+        var match = new MatchManager();
 
         Console.WriteLine("Hello World!");
     }

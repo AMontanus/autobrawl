@@ -1,4 +1,4 @@
-﻿namespace Autobrawl.Model;
+﻿namespace Autobrawl.Model.Enums;
 [Flags]
 public enum Keywords
 {

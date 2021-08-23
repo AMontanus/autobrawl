@@ -1,16 +1,17 @@
-﻿using Autobrawl.Model.Enums;
-
-namespace Autobrawl.Model;
+﻿namespace Autobrawl.Model;
 public class Match
 {
     public Match()
     {
         ID = Guid.NewGuid();
-        Players = new HashSet<Player>();
+        Players = new List<Player>();
         RemainingPlayers = Players;
-        AvailableChampions = new HashSet<Champion>();
-        SelectedChampions = new HashSet<Champion>();
-        AvailableAspects = new HashSet<Aspect>();
+        AvailableChampions = new List<Champion>();
+        SelectedChampions = new List<Champion>();
+        AvailableAspects = new List<Aspect>();
+
+        StartDateTime = DateTime.UtcNow;
+        IsActive = true;
     }
 
     [Required]
@@ -19,27 +20,13 @@ public class Match
 
     public DateTime StartDateTime { get; private set; }
 
-    public DateTime EndDateTime { get; private set; }
+    public DateTime EndDateTime { get; set; }
 
-    public bool IsActive { get; private set; }
+    public bool IsActive { get; set; }
 
-    public Phase CurrentPhase {  get; private set; }
-
-    public ICollection<Player> Players { get; set; }
-    public ICollection<Player> RemainingPlayers { get; set; }
-    public ICollection<Champion> AvailableChampions { get; set; }
-    public ICollection<Champion> SelectedChampions { get; set; }
-    public ICollection<Aspect> AvailableAspects { get; set; }
-
-    public void StartMatch()
-    {
-        StartDateTime = DateTime.UtcNow;
-        IsActive = true;
-    }
-
-    public void EndMatch()
-    {
-        EndDateTime = DateTime.UtcNow;
-        IsActive = false;
-    }
+    public List<Player> Players { get; set; }
+    public List<Player> RemainingPlayers { get; set; }
+    public List<Champion> AvailableChampions { get; set; }
+    public List<Champion> SelectedChampions { get; set; }
+    public List<Aspect> AvailableAspects { get; set; }
 }

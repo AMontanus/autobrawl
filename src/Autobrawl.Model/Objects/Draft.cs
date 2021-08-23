@@ -7,6 +7,8 @@ public class Draft
         _draftTime = _baseDraftSeconds;
     }
 
+    //Move stuff to manager?
+
     private static readonly int _firstRound = 1;
     private static readonly int _baseDraftSeconds = 60;
     private static readonly int _maxDraftSeconds = 120;
