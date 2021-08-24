@@ -1,6 +1,4 @@
-﻿using Autobrawl.Model.Enums;
-
-namespace Autobrawl.Engine.Mechanics;
+﻿namespace Autobrawl.Engine.Mechanics;
 public class PhaseManager
 {
     private static readonly Phase _initialPhase = Phase.Selection;

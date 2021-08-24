@@ -4,6 +4,9 @@ public class MatchManager
     public MatchManager()
     {
         Match = new();
+        DraftManager = new();
+        PhaseManager = new();
+
     }
 
     public Match Match {  get; set; }
