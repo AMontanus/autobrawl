@@ -1,13 +1,7 @@
-﻿using Autobrawl.Engine.Mechanics;
-using Autobrawl.Model;
+﻿var draft = new DraftManager();
 
-namespace Autobrawl.CLI;
-class Program
+for(int i = 0; i < 10; i++)
 {
-    static void Main(string[] args)
-    {
-        var match = new MatchManager();
-
-        Console.WriteLine("Hello World!");
-    }
+    Console.WriteLine($"Round {i} - Draft time: {draft.Draft.DraftTime}");
+    draft.IncrementDraftTime();
 }
