@@ -20,7 +20,7 @@ public class MatchManager
 
     public void EndMatch()
     {
-        Match.EndDateTime = DateTime.UtcNow;
+        Match.End = DateTime.UtcNow;
         Match.IsActive = false;
     }
 }

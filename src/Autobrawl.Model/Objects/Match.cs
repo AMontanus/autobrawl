@@ -10,17 +10,17 @@ public class Match
         SelectedChampions = new List<Champion>();
         AvailableAspects = new List<Aspect>();
 
-        StartDateTime = DateTime.UtcNow;
+        Start = DateTime.UtcNow;
         IsActive = true;
     }
 
     [Required]
     [Key]
-    public Guid ID { get; set; }
+    public Guid ID { get; private set; }
 
-    public DateTime StartDateTime { get; private set; }
+    public DateTime Start { get; private set; }
 
-    public DateTime EndDateTime { get; set; }
+    public DateTime End { get; set; }
 
     public bool IsActive { get; set; }
 
