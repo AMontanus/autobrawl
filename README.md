@@ -11,7 +11,7 @@
 * Each player selects 1 of 3 `Champions`.
 * Start on level 1, use mana to upgrade levels up to level 6.
 * Start with 3 mana, gain 1 max mana per round up to a maximum of 10.
-* 9+ "`Aspects`" - 6 available per match.
+* 9+ `Aspects` - 6 available per match.
 * 18 units per "Aspect" - 3 per level.
 * Units cost 3 mana.
 * Units are budgeted and weighted with stats and effects (Keywords).
