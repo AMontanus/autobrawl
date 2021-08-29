@@ -1,4 +1,4 @@
-﻿namespace Autobrawl.Model;
+﻿namespace Autobrawl.Model.Objects;
 public class Unit
 {
     public Unit(Card card)

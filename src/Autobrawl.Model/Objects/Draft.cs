@@ -1,4 +1,4 @@
-﻿namespace Autobrawl.Model;
+﻿namespace Autobrawl.Model.Objects;
 public class Draft
 {
     private static readonly int _baseDraftSeconds = 60;

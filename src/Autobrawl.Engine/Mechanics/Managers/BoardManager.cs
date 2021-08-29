@@ -1,4 +1,4 @@
 ﻿namespace Autobrawl.Engine.Mechanics;
-public class ChampionManager
+public class BoardManager
 {
 }

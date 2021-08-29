@@ -1,4 +1,4 @@
-﻿namespace Autobrawl.Model;
+﻿namespace Autobrawl.Model.Objects;
 public class Hand
 {
     public Hand()

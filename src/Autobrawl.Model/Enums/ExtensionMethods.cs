@@ -1,4 +1,5 @@
-﻿namespace Autobrawl.Model.Enums; public static class Extensions
+﻿namespace Autobrawl.Model.Enums; 
+public static class Extensions
 {
     public static T Next<T>(this T src) 
         where T : Enum

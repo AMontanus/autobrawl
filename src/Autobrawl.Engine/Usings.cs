@@ -1,4 +1,4 @@
-﻿global using Autobrawl.Model;
+﻿global using Autobrawl.Model.Objects;
 global using Autobrawl.Model.Enums;
 global using System;
 global using System.Collections.Generic;
