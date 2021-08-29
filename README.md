@@ -3,7 +3,7 @@
 
 ## Concept
 * Card-based auto battler.
-* Build with WASM?
+* WASM frontend.
 
 ## Concept headlines
 * 6 players per match - PvE and PvP rounds.
