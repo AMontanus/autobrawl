@@ -3,8 +3,8 @@ public class AspectFunctions
 {
     private static readonly int ASPECTS_PER_GAME = 6;
 
-    public Task<IEnumerable<Aspect>> SelectAspects()
+    public static IEnumerable<Aspect> Rummage()
     {
-        IEnumerable<Aspect> aspects = Enum.GetValues(typeof(Aspect)).Cast<Aspect>();
+        return Enum.GetValues(typeof(Aspect)).Cast<Aspect>().Take(ASPECTS_PER_GAME);
     }
 }

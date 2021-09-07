@@ -3,8 +3,21 @@
 namespace Autobrawl.Engine.Mechanics;
 public class PlayerStateManager : IPlayerStateManager
 {
+    public PlayerStateManager(List<Player> players)
+    {
+        Players = players;
+        SetPlayerNumbers();
+    }
 
     public List<Player> Players { get; set; }
+
+    private void SetPlayerNumbers()
+    {
+        var no = 0;
+        Players = Players.OrderBy(p => Guid.NewGuid()).ToList();
+        foreach (var player in Players)
+            player.PlayerNo = ++no;
+    }
 
     public Level LevelUp(Level level)
     {

@@ -27,6 +27,8 @@ public class Player
 
     public int Placement { get; set; }
 
+    public List<Champion> ChampionChoices { get; set; }
+
     public Champion Champion { get; set; }
 
     public Board Board { get; set; }
