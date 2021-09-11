@@ -1,4 +1,6 @@
-﻿namespace Autobrawl.Engine.Mechanics;
+﻿using Autobrawl.Engine.Mechanics.Functions;
+
+namespace Autobrawl.Engine.Mechanics;
 public class MatchManager
 {
     public MatchManager()
@@ -6,9 +8,10 @@ public class MatchManager
         Match = new();
         DraftManager = new();
         PhaseManager = new();
-
+        AvailableAspects = AspectFunctions.Rummage().ToList();
     }
 
+    public List<Aspect> AvailableAspects { get; set; }
     public Match Match {  get; set; }
     public ChampionManager ChampionManager { get; set; }
     public DraftManager DraftManager { get; set; }

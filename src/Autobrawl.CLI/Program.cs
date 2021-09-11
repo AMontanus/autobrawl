@@ -9,6 +9,8 @@ players = ChampionManager.AllocateChampionChoices(players);
 
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine($"Match started at: {match.Match.Start}");
+foreach (Aspect aspect in match.AvailableAspects)
+    Console.WriteLine($"{aspect}");
 
 foreach(var player in players)
 {

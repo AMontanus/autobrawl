@@ -8,18 +8,16 @@ public class ChampionManager
     {
     }
 
+    private static List<Champion> usedChampions = new();
+
     public static List<Player> AllocateChampionChoices(List<Player> players)
     {
-        List<Champion> used = new();
-
-
-
         foreach (var player in players)
         {
-            var selection = Rummage(ALL_CHAMPIONS.Except(used));
+            var selection = Rummage(ALL_CHAMPIONS.Except(usedChampions));
             player.ChampionChoices = selection.ToList();
             foreach (var choice in selection)
-                used.Add(choice);
+                usedChampions.Add(choice);
         }
 
         return players;

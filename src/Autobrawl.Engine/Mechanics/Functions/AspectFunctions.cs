@@ -5,6 +5,6 @@ public class AspectFunctions
 
     public static IEnumerable<Aspect> Rummage()
     {
-        return Enum.GetValues(typeof(Aspect)).Cast<Aspect>().Take(ASPECTS_PER_GAME);
+        return Enum.GetValues(typeof(Aspect)).Cast<Aspect>().OrderBy(a => Guid.NewGuid()).Take(ASPECTS_PER_GAME);
     }
 }
