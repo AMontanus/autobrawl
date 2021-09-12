@@ -96,6 +96,17 @@ public enum Keywords
     /// </summary>
     Aftershock = 1 << 17,
 
+    /// <summary>
+    /// Aspect: Water. Combat: When you summon X Water units
+    /// </summary>
+    Overflow = 1 << 18,
+
+
+    /// <summary>
+    /// Aspect: Air. Combat: Whenever a friendly Air unit attacks
+    /// </summary>
+    Updraft = 1 << 19,
+
 
 
 
