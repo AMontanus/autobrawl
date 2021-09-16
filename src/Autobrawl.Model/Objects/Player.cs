@@ -1,21 +1,18 @@
 ﻿namespace Autobrawl.Model.Objects;
 public class Player
 {
-    public static int playerNo = 1;
-    
     public Player()
     {
         ID = Guid.NewGuid();
-        playerNo ++;
     }
 
     [Required]
     [Key]
     public Guid ID { get; set; }
 
-    
-
     public Level Level { get; set; }
+
+    public int PlayerNo { get; set; }
 
     public int MaxHealth { get; set; }
 
