@@ -1,4 +1,4 @@
-﻿namespace Autobrawl.Engine;
+﻿namespace Autobrawl.Model.Constants;
 
 public static class Constants
 {
@@ -40,7 +40,7 @@ public static class Constants
     /// Aspect: Normal (0)
     /// </summary>
     public static List<Card> AllNormalCards
-    { 
+    {
         get
         {
             List<Card> cards = new()
@@ -77,7 +77,7 @@ public static class Constants
             };
 
             return cards;
-        } 
+        }
     }
 
     /// <summary>
@@ -95,8 +95,8 @@ public static class Constants
                 new Card { ID = 1113, Aspect = Aspect.Fire, Level = Level.One, Name = "", BaseAttack = 2, BaseHealth = 2, Keywords = Keywords.Survivor, Text = $"{Keywords.Survivor}: Reduce the cost of leveling up by 1" },
 
                 //Level 2
-                new Card { ID = 1121, Aspect = Aspect.Fire, Level = Level.Two, Name = "", BaseAttack = 3, BaseHealth = 3, Keywords = Keywords.HotStreak, Text = $"{Keywords.HotStreak}: Give another {Aspect.Fire} unit +1/+1 "},
-                new Card { ID = 1122, Aspect = Aspect.Fire, Level = Level.Two, Name = "", BaseAttack = 2, BaseHealth = 4, Keywords = Keywords.HotStreak & Keywords.Distract, Text = $"{Keywords.HotStreak}: Gain 1 health "},
+                new Card { ID = 1121, Aspect = Aspect.Fire, Level = Level.Two, Name = "", BaseAttack = 3, BaseHealth = 3, Keywords = Keywords.HotStreak, Text = $"{Keywords.HotStreak}: Give another {Aspect.Fire} unit +1/+1 " },
+                new Card { ID = 1122, Aspect = Aspect.Fire, Level = Level.Two, Name = "", BaseAttack = 2, BaseHealth = 4, Keywords = Keywords.HotStreak & Keywords.Distract, Text = $"{Keywords.HotStreak}: Gain 1 health " },
                 new Card { ID = 1123, Aspect = Aspect.Fire, Level = Level.Two, Name = "", BaseAttack = 2, BaseHealth = 3, Keywords = Keywords.EndOfTurn, Text = $"{Keywords.EndOfTurn}: Your next {Aspect.Fire} unit costs 1 less" },
 
                 //Level 3
