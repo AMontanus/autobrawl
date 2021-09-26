@@ -1,7 +1,7 @@
 ﻿namespace Autobrawl.Engine.Mechanics.Functions;
 public class AspectFunctions
 {
-    private static readonly int ASPECTS_PER_GAME = 6;
+    private const int ASPECTS_PER_GAME = 6;
 
     public static IEnumerable<Aspect> Rummage()
     {

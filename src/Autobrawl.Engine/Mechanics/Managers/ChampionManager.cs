@@ -2,7 +2,7 @@
 public class ChampionManager
 {
     private static readonly List<Champion> ALL_CHAMPIONS = Constants.AllChampions;
-    private static readonly int CHOICES_PER_PLAYER = 3;
+    private const int CHOICES_PER_PLAYER = 3;
 
     public ChampionManager()
     {
