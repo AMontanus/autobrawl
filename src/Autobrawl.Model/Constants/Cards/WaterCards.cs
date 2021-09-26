@@ -4,6 +4,8 @@ public static partial class Constants
 {
     /// <summary>
     /// Aspect: Water (2)
+    /// Combat buff oriented with tokens and curtaincall
+    /// Special "spell" token. Snowball. Castable on friendly Water units to give it +2/+2
     /// </summary>
     public static List<Card> AllWaterCards
     {
@@ -24,8 +26,10 @@ public static partial class Constants
                 //Level 3
                 new Card { ID = 1231, Aspect = Aspect.Water, Level = Level.Three, Name = "", BaseAttack = 2, BaseHealth = 4, Keywords = Keywords.Overflow, Text = $"{Keywords.Overflow} (1): Give your other {Aspect.Water} units +1/+1" },
                 new Card { ID = 1232, Aspect = Aspect.Water, Level = Level.Three, Name = "", BaseAttack = 3, BaseHealth = 3, Keywords = Keywords.Invoke, Text = $"{Keywords.Invoke}: Give another {Aspect.Water} unit +2/+2 and {Keywords.Distract}" },
-                new Card { ID = 1233, Aspect = Aspect.Water, Level = Level.Three, Name = "", BaseAttack = 4, BaseHealth = 2, Keywords = Keywords.CurtainCall, Text = $"{Keywords.CurtainCall}: Add a snowball to your hand" }, //Snowball: Castable on friendly Water unit, gives +2/+2
+                new Card { ID = 1233, Aspect = Aspect.Water, Level = Level.Three, Name = "", BaseAttack = 4, BaseHealth = 2, Keywords = Keywords.CurtainCall, Text = $"{Keywords.CurtainCall}: Add a snowball to your hand" },
 
+                //Level 4
+                new Card { ID = 1241, Aspect = Aspect.Water, Level = Level.Four, Name = "", BaseAttack = 3, BaseHealth = 7, Keywords = Keywords.Camouflage & Keywords.Survivor, Text = $"{Keywords.Survivor}: Add 2 snowballs to your hand" }
             };
 
             return cards;
