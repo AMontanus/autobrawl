@@ -31,7 +31,7 @@ public class CardStateManager
         Aspect.Air => Constants.AllAirCards,
         Aspect.Death => Constants.AllDeathCards,
         Aspect.Shadow => Constants.AllShadowCards,
-        Aspect.Light => Constants.AllLightCards,
+        Aspect.Lightning => Constants.AllLightCards,
         Aspect.Nature => Constants.AllNatureCards,
         Aspect.Psychic => Constants.AllNatureCards,
         _ => throw new ArgumentOutOfRangeException(nameof(aspect))

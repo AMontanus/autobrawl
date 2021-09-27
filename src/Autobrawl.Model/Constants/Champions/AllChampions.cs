@@ -25,7 +25,7 @@ public static partial class Constants
                 new Champion { ID = 15, Name = $"Mr. {(Aspect)4}", AbilityDescription = "", Aspect = Aspect.Air },
                 new Champion { ID = 16, Name = $"Mr. {(Aspect)5}", AbilityDescription = "", Aspect = Aspect.Death },
                 new Champion { ID = 17, Name = $"Mr. {(Aspect)6}", AbilityDescription = "", Aspect = Aspect.Shadow },
-                new Champion { ID = 18, Name = $"Mr. {(Aspect)7}", AbilityDescription = "", Aspect = Aspect.Light },
+                new Champion { ID = 18, Name = $"Mr. {(Aspect)7}", AbilityDescription = "", Aspect = Aspect.Lightning },
                 new Champion { ID = 19, Name = $"Mr. {(Aspect)8}", AbilityDescription = "", Aspect = Aspect.Nature },
                 new Champion { ID = 20, Name = $"Mr. {(Aspect)9}", AbilityDescription = "", Aspect = Aspect.Psychic }
             };
