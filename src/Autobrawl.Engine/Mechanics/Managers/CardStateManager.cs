@@ -24,8 +24,8 @@ public class CardStateManager
 
     private static IEnumerable<Card> FetchCards(Aspect aspect) => aspect switch
     {
-        Aspect.Normal => Constants.GetAllNormalCards(),
-        Aspect.Fire => Constants.GetAllFireCards(),
+        Aspect.Normal => Constants.AllNormalCards(),
+        Aspect.Fire => Constants.AllFireCards(),
         Aspect.Water => Constants.AllWaterCards,
         Aspect.Earth => Constants.AllEarthCards,
         Aspect.Air => Constants.AllAirCards,
