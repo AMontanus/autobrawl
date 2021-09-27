@@ -11,7 +11,7 @@ public enum Aspect
     Air,
     Death,
     Shadow,
-    Light,
+    Lightning,
     Nature,
     Psychic
 }

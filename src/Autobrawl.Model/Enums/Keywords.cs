@@ -107,7 +107,10 @@ public enum Keywords
     /// </summary>
     Updraft = 1 << 19,
 
-
+    /// <summary>
+    /// Aspect: Shadow. Draft/Combat: For each other Shadow unit
+    /// </summary>
+    Blend = 1 << 20, //TODO: How to word this for card text?
 
 
     #endregion
