@@ -10,21 +10,24 @@ public class ChampionManager
 
     public static List<Player> AllocateChampionChoices(List<Player> players)
     {
-        List<int> usedChampionIds = new();
+        List<Champion> availableChampions = ALL_CHAMPIONS;
 
         foreach (var player in players)
         {
-            var selection = Rummage(ALL_CHAMPIONS.Where(c => !usedChampionIds.Contains(c.ID)));
+            var selection = Rummage(availableChampions);
             player.ChampionChoices = selection.ToList();
             foreach (var choice in selection)
-                usedChampionIds.Add(choice.ID);
+            {
+                availableChampions.Remove(choice);
+            }
+                
         }
 
         return players;
     }
 
-    private static IEnumerable<Champion> Rummage(IEnumerable<Champion> availableChamps)
+    private static List<Champion> Rummage(List<Champion> availableChamps)
     {
-        return availableChamps.OrderBy(r => Guid.NewGuid()).Take(CHOICES_PER_PLAYER);
+        return availableChamps.OrderBy(r => Guid.NewGuid()).Take(CHOICES_PER_PLAYER).ToList();
     }
 }
