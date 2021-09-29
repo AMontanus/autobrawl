@@ -1,7 +1,7 @@
 ﻿namespace Autobrawl.Engine.Mechanics;
 public class PhaseManager
 {
-    private static readonly Phase _initialPhase = Phase.Selection;
+    private const Phase _initialPhase = Phase.Selection;
 
     public PhaseManager()
     {
