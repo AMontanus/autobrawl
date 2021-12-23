@@ -1,16 +1,7 @@
 ﻿namespace Autobrawl.Engine.Mechanics.Managers;
 public class CardStateManager
 {
-    public CardStateManager()
-    {
-
-    }
-
-
-
     public List<Card> Cards { get; set; } = new();
-
-    
 
     public static IEnumerable<Card> Draft(IEnumerable<Aspect> aspects)
     {
@@ -22,18 +13,19 @@ public class CardStateManager
         return deck;
     }
 
-    private static IEnumerable<Card> FetchCards(Aspect aspect) => aspect switch
-    {
-        Aspect.Normal => Constants.AllNormalCards(),
-        Aspect.Fire => Constants.AllFireCards(),
-        Aspect.Water => Constants.AllWaterCards,
-        Aspect.Earth => Constants.AllEarthCards,
-        Aspect.Air => Constants.AllAirCards,
-        Aspect.Death => Constants.AllDeathCards,
-        Aspect.Shadow => Constants.AllShadowCards,
-        Aspect.Lightning => Constants.AllLightCards,
-        Aspect.Nature => Constants.AllNatureCards,
-        Aspect.Psychic => Constants.AllNatureCards,
-        _ => throw new ArgumentOutOfRangeException(nameof(aspect))
-    };
+    private static IEnumerable<Card> FetchCards(Aspect aspect)
+        => aspect switch
+        {
+            Aspect.Normal => Constants.AllNormalCards(),
+            Aspect.Fire => Constants.AllFireCards(),
+            Aspect.Water => Constants.AllWaterCards,
+            Aspect.Earth => Constants.AllEarthCards,
+            Aspect.Air => Constants.AllAirCards,
+            Aspect.Death => Constants.AllDeathCards,
+            Aspect.Shadow => Constants.AllShadowCards,
+            Aspect.Lightning => Constants.AllLightCards,
+            Aspect.Nature => Constants.AllNatureCards,
+            Aspect.Psychic => Constants.AllNatureCards,
+            _ => throw new ArgumentOutOfRangeException(nameof(aspect))
+        };
 }

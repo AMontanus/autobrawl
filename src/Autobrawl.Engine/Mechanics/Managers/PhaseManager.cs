@@ -1,24 +1,11 @@
 ﻿namespace Autobrawl.Engine.Mechanics;
 public class PhaseManager
 {
-    private static readonly Phase _initialPhase = Phase.Selection;
+    private readonly Phase currentPhase;
 
-    public PhaseManager()
+    public Phase CurrentPhase
     {
-        CurrentPhase = _initialPhase;
-    }
-
-    public Phase CurrentPhase { get; private set; }
-
-    public void ChangePhase()
-    {
-        if (CurrentPhase == Phase.Selection)
-            CurrentPhase = Phase.Draft;
-
-        else if (CurrentPhase == Phase.Draft)
-            CurrentPhase = Phase.Combat;
-
-        else
-            CurrentPhase = Phase.Draft;
+        get => currentPhase;
+        set => currentPhase.ChangePhase();
     }
 }

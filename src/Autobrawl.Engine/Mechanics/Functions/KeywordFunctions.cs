@@ -1,4 +1,4 @@
-﻿namespace Autobrawl.Engine.Mechanics.Functions;
+﻿namespace Autobrawl.Engine.Mechanics;
 public class KeywordFunctions
 {
 }
