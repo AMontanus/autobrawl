@@ -1,13 +1,16 @@
 ﻿namespace Autobrawl.Engine.Model;
 
-public class Deck
+public sealed class Deck
 {
-    [Key, Required]
-    public Guid ID { get; } = Guid.NewGuid();
+    private static readonly Lazy<Deck> lazy = new(() => new Deck());
 
-    [Required]
-    public ICollection<Aspect> AvailableAspects { get; set; }
+    public static Deck Instance => lazy.Value;
 
-    [Required]
+    private Deck()
+    {
+    }
+
+    public ICollection<Aspect> Aspects { get; set; }
+
     public ICollection<Card> AvailableCards { get; set; }
 }

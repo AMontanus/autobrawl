@@ -3,7 +3,7 @@ public sealed class ChampionManager
 {
     private static readonly Lazy<ChampionManager> lazy = new(() => new ChampionManager());
 
-    public static ChampionManager Instance { get { return lazy.Value; } }
+    public static ChampionManager Instance => lazy.Value;
 
     private ChampionManager()
     {

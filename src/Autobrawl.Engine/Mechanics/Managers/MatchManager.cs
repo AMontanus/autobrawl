@@ -1,13 +1,11 @@
-﻿using Autobrawl.Engine.Mechanics.Functions;
-
-namespace Autobrawl.Engine.Mechanics;
+﻿namespace Autobrawl.Engine.Mechanics;
 public class MatchManager
 {
     public MatchManager()
     {
         Match = new();
         PhaseManager = new();
-        AvailableAspects = AspectFunctions.Rummage().ToList();
+        AvailableAspects = AspectFunctions.Rummage();
     }
 
     public List<Aspect> AvailableAspects { get; set; }
@@ -17,7 +15,6 @@ public class MatchManager
     public GameStateManager GameStateManager { get; set; }
     public PhaseManager PhaseManager { get; set; }
     public RoundManager RoundManager { get; set; }
-
 
     public void EndMatch()
     {
