@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31512.422
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autobrawl.Model", "Autobrawl.Model\Autobrawl.Model.csproj", "{84A4CB06-5C06-4B76-ABC5-CBB2880B8518}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autobrawl.CLI", "Autobrawl.CLI\Autobrawl.CLI.csproj", "{9BEB5C82-AB95-4DD7-8ACB-1CE4EA47F2CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autobrawl.CLI", "Autobrawl.CLI\Autobrawl.CLI.csproj", "{9BEB5C82-AB95-4DD7-8ACB-1CE4EA47F2CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autobrawl.Engine", "Autobrawl.Engine\Autobrawl.Engine.csproj", "{EA09AD39-B4BD-4FF1-A06F-2CD9A0C48809}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autobrawl.Engine", "Autobrawl.Engine\Autobrawl.Engine.csproj", "{EA09AD39-B4BD-4FF1-A06F-2CD9A0C48809}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autobrawl.Tests", "Autobrawl.Tests\Autobrawl.Tests.csproj", "{A517C1BB-106A-4C1A-93AB-132C945165BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{84A4CB06-5C06-4B76-ABC5-CBB2880B8518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84A4CB06-5C06-4B76-ABC5-CBB2880B8518}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84A4CB06-5C06-4B76-ABC5-CBB2880B8518}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84A4CB06-5C06-4B76-ABC5-CBB2880B8518}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BEB5C82-AB95-4DD7-8ACB-1CE4EA47F2CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BEB5C82-AB95-4DD7-8ACB-1CE4EA47F2CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BEB5C82-AB95-4DD7-8ACB-1CE4EA47F2CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{EA09AD39-B4BD-4FF1-A06F-2CD9A0C48809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA09AD39-B4BD-4FF1-A06F-2CD9A0C48809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA09AD39-B4BD-4FF1-A06F-2CD9A0C48809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A517C1BB-106A-4C1A-93AB-132C945165BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A517C1BB-106A-4C1A-93AB-132C945165BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A517C1BB-106A-4C1A-93AB-132C945165BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A517C1BB-106A-4C1A-93AB-132C945165BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Autobrawl.Engine\Autobrawl.Engine.csproj" />
-    <ProjectReference Include="..\Autobrawl.Model\Autobrawl.Model.csproj" />
   </ItemGroup>
 
 </Project>
