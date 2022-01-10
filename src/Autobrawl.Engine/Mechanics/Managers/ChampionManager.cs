@@ -5,19 +5,8 @@ public sealed class ChampionManager
 
     public static ChampionManager Instance => lazy.Value;
 
-        foreach (var player in players)
-        {
-            var selection = Rummage(ALL_CHAMPIONS.Where(c => !usedChampionIds.Contains(c.ID)));
-            player.ChampionChoices = selection.ToList();
-            foreach (var choice in selection)
-                usedChampionIds.Add(choice.ID);
-        }
-
-        return players;
-    }
-
-    private static IEnumerable<Champion> Rummage(IEnumerable<Champion> availableChamps)
+    public static IEnumerable<Champion> Rummage(IEnumerable<Champion> availableChamps, int choices)
     {
-        return availableChamps.OrderBy(r => Guid.NewGuid()).Take(CHOICES_PER_PLAYER);
+        return availableChamps.OrderBy(r => Guid.NewGuid()).Take(choices);
     }
 }

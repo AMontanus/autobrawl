@@ -5,14 +5,12 @@ public class MatchManager
     {
         Match = new();
         PhaseManager = new();
-        AvailableAspects = AspectFunctions.Rummage();
     }
 
-    public List<Aspect> AvailableAspects { get; set; }
     public Match Match {  get; set; }
     public ChampionManager ChampionManager { get; set; }
     public Draft Draft { get; set; }
-    public GameStateManager GameStateManager { get; set; }
+    public static GameStateManager GameStateManager => GameStateManager.Instance;
     public PhaseManager PhaseManager { get; set; }
     public RoundManager RoundManager { get; set; }
 

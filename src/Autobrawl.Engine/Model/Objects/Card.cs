@@ -22,4 +22,9 @@ public class Card
     public Aspect Aspect { get; set; }
 
     public Keywords Keywords { get; set; }
+
+    public override string ToString()
+    {
+        return $"ID: [{ID}]\nName: [{Name}]\nAspect: [{Aspect}]";
+    }
 }

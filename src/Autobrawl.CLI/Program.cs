@@ -1,21 +1,26 @@
-﻿var match = new MatchManager();
-
-var players = new List<Player>() { new(), new(), new(), new(), new(), new() };
-
-Console.ForegroundColor = ConsoleColor.Yellow;
-Console.WriteLine($"Match started at: {match.Match.Start}");
-foreach (Aspect aspect in match.AvailableAspects)
-    Console.WriteLine($"{aspect}");
-
-foreach (var player in players)
+﻿var beginning = DateTime.Now;
+var cardState = CardStateManager.Instance;
+for(int i = 0; i < 100; i++)
 {
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine($"Player no: {player.PlayerNo}");
-    Console.ForegroundColor = ConsoleColor.Red;
-}
-Console.ResetColor();
+    var instanceStart = DateTime.Now;
+    _ = cardState.Deck.TryGetNonEnumeratedCount<Card>(out var countBefore);
+    Console.WriteLine($"Card count before: {countBefore}");
 
-match.EndMatch();
-Console.ForegroundColor = ConsoleColor.Yellow;
-Console.WriteLine($"Match ended at: {match.Match.End}");
-Console.ReadKey();
+    var cards = cardState.Draw(3);
+    _ = cardState.Deck.TryGetNonEnumeratedCount<Card>(out var countDuring);
+    Console.WriteLine($"Card count during: {countDuring}");
+
+    foreach (var card in cards)
+        Console.WriteLine($"{card}");
+    cardState.Return(cards);
+
+    _ = cardState.Deck.TryGetNonEnumeratedCount<Card>(out var countAfter);
+    Console.WriteLine($"Card count after: {countAfter}");
+    var instanceEnd = DateTime.Now;
+
+    Console.WriteLine($"Round-trip took {instanceEnd.Millisecond - instanceStart.Millisecond} ms");
+}
+
+var final = DateTime.Now;
+
+Console.WriteLine($"Total time in seconds: {final.Second - beginning.Second}");
