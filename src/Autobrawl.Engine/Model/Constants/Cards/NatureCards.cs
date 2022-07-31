@@ -1,6 +1,6 @@
 ﻿namespace Autobrawl.Engine.Model;
 
-public static partial class Constants
+public static partial class CardExtensions
 {
     /// <summary>
     /// Aspect: Nature (8)
@@ -9,10 +9,10 @@ public static partial class Constants
     {
         get
         {
-            return (List<Card>)(new()
+            return new()
             {
 
-            });
+            };
         }
     }
 }

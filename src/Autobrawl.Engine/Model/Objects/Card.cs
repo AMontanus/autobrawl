@@ -1,27 +1,27 @@
 ﻿namespace Autobrawl.Engine.Model;
-public class Card
+public record struct Card
 {
     /// <summary>
     /// [1][Aspect][Level][Order]
     /// </summary>
     [Required]
-    public int ID { get; set; }
+    public int ID { get; init; }
     [Required]
-    public string Name { get; set; }
+    public string Name { get; init; }
 
-    public string Text { get; set; }
-
-    [Required]
-    public int BaseAttack { get; set; }
-    [Required]
-    public int BaseHealth { get; set; }
-    [Required]
-    public Level Level { get; set; }
+    public string Text { get; init; }
 
     [Required]
-    public Aspect Aspect { get; set; }
+    public int BaseAttack { get; init; }
+    [Required]
+    public int BaseHealth { get; init; }
+    [Required]
+    public int Level { get; init; }
 
-    public Keywords Keywords { get; set; }
+    [Required]
+    public Aspect Aspect { get; init; }
+
+    public Keywords Keywords { get; init; }
 
     public override string ToString()
     {

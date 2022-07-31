@@ -1,8 +1,8 @@
 ﻿namespace Autobrawl.Engine.Mechanics.Functions;
 
-public class RerollFunctions
+public static class RerollFunctions
 {
-    public List<Card> Reroll(Player player)
+    public static List<Card> Reroll(Player player)
     {
         return new List<Card>();
     }

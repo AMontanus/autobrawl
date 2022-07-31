@@ -9,5 +9,5 @@ public static partial class Constants
     public const int COPIES_LVL_5 = 10;
     public const int COPIES_LVL_6 = 8;
 
-    public static List<Card> AllCards = new();
+    public static List<Card> AllCards { get; } = new();
 }

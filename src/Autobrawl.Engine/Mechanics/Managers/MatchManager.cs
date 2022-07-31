@@ -1,4 +1,5 @@
 ﻿namespace Autobrawl.Engine.Mechanics;
+
 public class MatchManager
 {
     public MatchManager()
@@ -10,7 +11,7 @@ public class MatchManager
     public Match Match {  get; set; }
     public ChampionManager ChampionManager { get; set; }
     public Draft Draft { get; set; }
-    public static GameStateManager GameStateManager => GameStateManager.Instance;
+    public GameStateManager GameStateManager { get; set; }
     public PhaseManager PhaseManager { get; set; }
     public RoundManager RoundManager { get; set; }
 

@@ -1,18 +1,14 @@
 ﻿namespace Autobrawl.Engine.Model;
 
-public static partial class Constants
+public static partial class CardExtensions
 {
-    /// <summary>
-    /// Aspect: Earth (3)
-    /// </summary>
     public static List<Card> AllEarthCards
     {
         get
         {
-            return (List<Card>)(new()
+            return new()
             {
-
-            });
+            };
         }
     }
 }

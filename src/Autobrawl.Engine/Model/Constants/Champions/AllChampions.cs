@@ -2,11 +2,7 @@
 
 public static partial class Constants
 {
-    public static List<Champion> AllChampions
-    {
-        get
-        {
-            return (List<Champion>)(new()
+    public static List<Champion> AllChampions => new()
             {
                 new Champion { ID = 1, Name = $"Mr. {(Keywords)1}", AbilityDescription = "", Aspect = Aspect.Normal },
                 new Champion { ID = 2, Name = $"Mr. {(Keywords)2}", AbilityDescription = "", Aspect = Aspect.Normal },
@@ -28,7 +24,5 @@ public static partial class Constants
                 new Champion { ID = 18, Name = $"Mr. {(Aspect)7}", AbilityDescription = "", Aspect = Aspect.Lightning },
                 new Champion { ID = 19, Name = $"Mr. {(Aspect)8}", AbilityDescription = "", Aspect = Aspect.Nature },
                 new Champion { ID = 20, Name = $"Mr. {(Aspect)9}", AbilityDescription = "", Aspect = Aspect.Psychic }
-            });
-        }
-    }
+            };
 }

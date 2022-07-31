@@ -3,10 +3,10 @@ public class Player
 {
     [Key, Required]
     public Guid ID { get; set; } = Guid.NewGuid();
-
-    public Level Level { get; set; }
-
+    
     public int PlayerNo { get; set; }
+    
+    public int Level { get; set; }
 
     public int MaxHealth { get; set; }
 

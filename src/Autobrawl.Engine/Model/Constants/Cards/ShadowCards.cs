@@ -1,10 +1,10 @@
 ﻿namespace Autobrawl.Engine.Model;
 
-public static partial class Constants
+public static partial class CardExtensions
 {
     //Level 1
-    public static readonly Card Shadow1611 = new() { ID = 1611, Aspect = Aspect.Shadow, Level = Level.One, Name = "", BaseAttack = 1, BaseHealth = 2, Keywords = Keywords.Blend & Keywords.Inspire, Text = $"{Keywords.Inspire}: {Keywords.Blend}: Deal 1 damage to a random enemy unit" };
-    public static readonly Card Shadow1612 = new() { ID = 1612, Aspect = Aspect.Shadow, Level = Level.One, Name = "", BaseAttack = 1, BaseHealth = 3, Keywords = Keywords.None, Text = $"" };
+    public static readonly Card Shadow1611 = new() { ID = 1611, Aspect = Aspect.Shadow, Level = 1, Name = "", BaseAttack = 1, BaseHealth = 2, Keywords = Keywords.Blend & Keywords.Inspire, Text = $"{Keywords.Inspire}: {Keywords.Blend}: Deal 1 damage to a random enemy unit" };
+    public static readonly Card Shadow1612 = new() { ID = 1612, Aspect = Aspect.Shadow, Level = 1, Name = "", BaseAttack = 1, BaseHealth = 3, Keywords = Keywords.None, Text = $"" };
 
 
 
@@ -15,10 +15,10 @@ public static partial class Constants
     {
         get
         {
-            return (List<Card>)(new()
+            return new()
             {
 
-            });
+            };
         }
     }
 }

@@ -1,9 +1,9 @@
 ﻿namespace Autobrawl.Engine.Mechanics;
-public static class PlayerFunctions
+public static class PlayerExtensions
 {
-    public static Level LevelUp(this Player player)
-        => player.Level < Level.Six
-            ? player.Level.Next()
+    public static int LevelUp(this Player player)
+        => player.Level < 6
+            ? player.Level = player.Level++
             : player.Level;
 
     public static int DealDamage(this Player player, int dmg)
